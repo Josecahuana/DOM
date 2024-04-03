@@ -19,10 +19,26 @@ Es esencialmente una interfaz de plataforma, o API de programación para documen
 | innerHTML | Inserta contenido html |
 
 ## ESTILOS
- 
+
         1. Style
         | Propiedad | Concepto |
         | --- | --- |
         | <todos los estilos css> | Añaden estilos inline |
 
-        1. 
+        1.classList
+        | Propiedad | Concepto |
+        | --- | --- |
+        | add | Añade una clase al elemento |
+
+## DOM TRAVERSING
+
+| Nodes | Concepto |
+| --- | --- |
+| parentElement | Busca al padre más cercano |
+| nextElementSibling | Busca al siguiente elemento cercano |
+
+
+## CREATE HTML
+
+1. Create Element -> crea un elemento html
+1. appendChild() -> Ayuda a insertar los elementos creado al padre

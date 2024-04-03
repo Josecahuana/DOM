@@ -4,7 +4,7 @@ const nameUser = document.getElementById('nameUser');
 const inputName = document.querySelector('input');
 const inputElement = document.querySelector('div input');
 const paraphELement = document.querySelectorAll('p');
-// const father = document.getElementsByClassName('father');
+const father = document.getElementsByClassName('father');
 
 
 /************************************************************************ */
@@ -31,32 +31,23 @@ buttonStyle.classList.add('activo');
 
 // DOM TRAVERSING
 
-const nieto = document.querySelector('.nieto-1');
+const child = document.querySelector('#child');
+const fatherElement = child.parentElement.parentElement;
+const nextChildElement = child.nextElementSibling;
 
-const father = nieto.parentElement.parentElement;
-
-const elementSibling = nieto.nextElementSibling;
-
-father.style.border = '1px solid red';
-// console.log(father);
-
-console.log(elementSibling);
+fatherElement.style.border = '1px solid red';
 
 
 /************************************************************************ */
 // CREATE HTML
 
-// create element
-const greeting = document.createElement('p');
-const root = document.getElementById('root');
+const root = document.getElementById('createChild');
+const label = document.createElement('LABEL');
+const input = document.createElement('INPUT');
 
-// agregar contenido
-greeting.textContent = 'Hola soy un parrafo creado por JS';
 
-// agregar atributos(opcional)
-greeting.classList.add('mensaje');
+label.textContent = 'Nombre';
+input.value = 'Hola';
 
-// Rendizar el elemento
-root.appendChild(greeting);
-
-// console.log(greeting);
+root.appendChild(label);
+root.appendChild(input);
