@@ -11,12 +11,15 @@ Es esencialmente una interfaz de plataforma, o API de programación para documen
 | querySelectorAll | Secciona todos los elementos-id-clases, etc |
 | getElementsByClassName | Selecciona la clase |
 
+---
 ## MODIFICACION DE ELEMENTOS
 
 | Propiedad | Concepto |
 | --- | --- |
 | textContent | Cambia el texto del elemento |
 | innerHTML | Inserta contenido html |
+
+---
 
 ## ESTILOS
 
@@ -30,6 +33,8 @@ Es esencialmente una interfaz de plataforma, o API de programación para documen
         | --- | --- |
         | add | Añade una clase al elemento |
 
+---
+
 ## DOM TRAVERSING
 
 | Nodes | Concepto |
@@ -37,6 +42,7 @@ Es esencialmente una interfaz de plataforma, o API de programación para documen
 | parentElement | Busca al padre más cercano |
 | nextElementSibling | Busca al siguiente elemento cercano |
 
+---
 
 ## CREATE HTML
 
